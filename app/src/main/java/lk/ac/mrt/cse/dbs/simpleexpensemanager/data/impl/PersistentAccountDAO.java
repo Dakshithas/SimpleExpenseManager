@@ -14,7 +14,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.exception.InvalidAccountExcep
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Account;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 
-public class PersistentAccountDAO implements AccountDAO, Serializable {
+public class PersistentAccountDAO implements AccountDAO{
     private DataBaseHelper db_helper;
     public PersistentAccountDAO(Context context){
         db_helper = new DataBaseHelper(context);
@@ -64,7 +64,7 @@ public class PersistentAccountDAO implements AccountDAO, Serializable {
             return account;
         }
         cursor.close();
-        throw new InvalidAccountException(String.format("Account number %s is not valid",accountNo));
+        throw new InvalidAccountException(String.format("Account %s is invalid",accountNo));
     }
 
     @Override

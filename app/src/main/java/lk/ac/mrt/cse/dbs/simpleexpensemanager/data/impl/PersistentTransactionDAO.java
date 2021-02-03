@@ -13,7 +13,7 @@ import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.TransactionDAO;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.ExpenseType;
 import lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model.Transaction;
 
-public class PersistentTransactionDAO implements TransactionDAO, Serializable {
+public class PersistentTransactionDAO implements TransactionDAO{
     private DataBaseHelper db_helper;
     public PersistentTransactionDAO(Context context){
         db_helper=new DataBaseHelper(context);

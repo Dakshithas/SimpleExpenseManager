@@ -1,4 +1,4 @@
-#Tue Feb 02 20:16:48 IST 2021
+#Wed Feb 03 15:51:49 IST 2021
 base.0=F\:\\DRIVE\\ACA\\Fourth Semester\\Database\\minProject\\SimpleExpenseManager-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -7,17 +7,19 @@ import android.support.annotation.Nullable;
 
 import java.io.Serializable;
 
-public class DataBaseHelper extends SQLiteOpenHelper implements Serializable {
+public class DataBaseHelper extends SQLiteOpenHelper{
     public static final int version = 1;
 
     private static final String CUSTOMER_TABLE = "CUSTOMER_TABLE";
     private static final String ID = "ID";
+    //using string.format() function here is useless. because since we have to add constraints then code may get complex.
     private static final String CREATE_ACCOUNT="CREATE TABLE " +
             DB.Account.TABLE_NAME + " (" +
             DB.Account.ACCOUNT_NUMBER + " TEXT PRIMARY KEY," +
             DB.Account.BANK_NAME + " TEXT,"+
             DB.Account.HOLDER_NAME + " TEXT,"+
             DB.Account.BALANCE + " REAL)";
+
     private static final String CREATE_TRANSACTION= "CREATE TABLE " +
             DB.Transaction.TABLE_NAME + " (" +
             DB.Transaction.DATE + " TEXT PRIMARY KEY," +

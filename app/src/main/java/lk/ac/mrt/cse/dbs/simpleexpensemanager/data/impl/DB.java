@@ -4,7 +4,7 @@ import android.provider.BaseColumns;
 
 import java.io.Serializable;
 
-public class DB implements Serializable {
+final class DB{
     public static final String dbname = "180626A";
     static class Account implements BaseColumns{
         static final String TABLE_NAME="account";
